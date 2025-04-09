@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('/src/image/banner.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+  }
+  body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #31163A;
+    opacity: 0.5; /* ajuste a opacidade como quiser */
+    z-index: 0;
+  }
+  
+  body > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Estilo do header */
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: transparent;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  /* Imagem da logo */
+  .image-link .image {
+    height: 50px;      /* Ajuste conforme necessário */
+    width: 600px;
+    object-fit: contain;
+  }
+  
+  /* Botão login */
+  .btnLogin-popup {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btnLogin-popup:hover {
+    background-color: #0056b3;
+  }
+  
+  
