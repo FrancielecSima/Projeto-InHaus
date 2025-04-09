@@ -46,6 +46,9 @@
     width: 100%;
     z-index: 1000;
   }
+  nav {
+    position: relative;
+  }
   
   /* Imagem da logo */
   .image-link .image {
@@ -70,4 +73,74 @@
     background-color: #0056b3;
   }
   
+/* Garante que o nav seja o contexto de posição */
+nav {
+  position: relative;
+}
+
+/* Esconde o formulário inicialmente */
+.login-form.hidden {
+  display: none;
+}
+
+/* Formulário aparece abaixo do botão */
+.login-form {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 10px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  animation: slideDown 0.3s ease-out;
+  width: 250px;
   
+}
+
+/* Estilo dos campos */
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.login-form button {
+  background-color: #31163A;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Animação leve */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btnLogin-popup {
+  margin-right: 200px; /* ajuste conforme necessário */
+  padding: 10px 20px;
+  background-color: #31163A;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
