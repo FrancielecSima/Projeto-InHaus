@@ -9,7 +9,7 @@
 <body>
     <main>
         <a href="#" class="image-link">
-          <img src="src/image/logo_inhaus.png" alt="Logo InHaus" class="image">
+          <img src="./src/image/logo_inhaus.png" alt="Logo InHaus" class="image">
         </a>
       
         <nav>
@@ -17,12 +17,13 @@
 
        
         <section class="login-form hidden" id="loginForm">
-          <form action="login.php" method="POST">
-            <h2>Entrar</h2>
-            <input type="text" name="usuario" placeholder="Usuário" required>
-            <input type="password" name="senha" placeholder="Senha" required>
-            <button type="submit">Entrar</button>
-          </form>
+        <form action="login.php" method="POST">
+    <h2>Entrar</h2>
+    <input type="text" name="usuario" placeholder="Usuário" required>
+    <input type="password" name="senha" placeholder="Senha" required>
+    <button type="submit">Entrar</button>
+</form>
+
           
           </section>
         </nav>

@@ -14,11 +14,12 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('/src/image/banner.png') no-repeat;
+    background-image: url('../image/banner.png');
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
   }
+  
   body::before {
     content: "";
     position: absolute;
